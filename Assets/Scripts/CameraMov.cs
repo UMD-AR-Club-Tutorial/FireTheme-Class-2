@@ -12,11 +12,13 @@ public class CameraMov : MonoBehaviour {
     void Start()
     {
         character = this.transform.parent.gameObject;
+        
+        
     }
 
     void Update()
     {
-
+        transform.rotation = Quaternion.Euler(0, 270, 0);
         var md = new Vector2(Input.GetAxisRaw("Mouse X"), Input.GetAxisRaw("Mouse Y"));
 
         
